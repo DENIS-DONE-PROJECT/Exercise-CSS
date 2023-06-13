@@ -1,14 +1,31 @@
 import React from "react";
 import "./App.css";
-import avatar from "./assets/img/denis.jfif";
 
 function App() {
     return (
-        <div className="App">
-            <h1>My resume</h1>
+        <div className="container">
+            <div className="gridLeft">
+                <div className="picture">picture</div>
+                <div className="identity">identity</div>
+                <div className="hardkill">hardkills`</div>
+                <div className="Language">Language</div>
+                <div className="softskill">softskill</div>
+            </div>
+            <div className="gridRight">
+                <div className="profile">profile</div>
+                <div className="gridExperience">
+                    experience
+                    <div className="childExperience1">Exp1</div>
+                    <div className="childExperience2">Exp2</div>
+                    <div className="childExperience3">Exp3</div>
+                </div>
 
-            <div className="avatar">
-                <img src={avatar} alt="avatar" />
+                <div className="gridTraining">
+                    Training
+                    <div className="childTaining1">Training 1</div>
+                    <div className="childTaining2">Training 2</div>
+                    <div className="childTaining3">Training 3</div>
+                </div>
             </div>
         </div>
     );
