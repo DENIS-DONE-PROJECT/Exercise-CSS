@@ -4,56 +4,58 @@
 
 .main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 0.3fr 0.7fr;
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    margin: 10px;
 }
 .one {
     grid-column: 1;
     grid-row: 1;
     background-color: green;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 .two {
     grid-column: 2;
     grid-row: 1;
     background-color: red;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 .three {
     grid-column: 1;
     grid-row: 2;
     background-color: yellowgreen;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 .four {
     grid-column: 2;
     grid-row: 2/4;
     background-color: grey;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 .five {
     grid-column: 1;
     grid-row: 3;
     background-color: blue;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 .seven {
     grid-column: 1;
     grid-row: 4;
     background-color: pink;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 .height {
     grid-column: 2;
     grid-row: 4/6;
-    background-color: black;
-    opacity: 0.4;
+    background-color: rgb(124, 84, 84);
+    opacity: 0.2;
 }
 
 .nine {
     grid-column: 1;
     grid-row: 5;
     background-color: blueviolet;
-    opacity: 0.4;
+    opacity: 0.2;
 }
