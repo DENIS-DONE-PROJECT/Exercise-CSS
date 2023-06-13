@@ -7,55 +7,53 @@
     /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: 0.3fr 0.7fr;
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-template-rows: 0.2fr 0.4fr 0.4fr;
+
     margin: 10px;
 }
-.one {
+
+.picture {
     grid-column: 1;
     grid-row: 1;
     background-color: green;
     opacity: 0.2;
 }
-.two {
+.profile {
     grid-column: 2;
     grid-row: 1;
     background-color: red;
     opacity: 0.2;
 }
-.three {
+
+.Left {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 2/4;
     background-color: yellowgreen;
     opacity: 0.2;
+    display: grid;
+    grid-template-rows: 0.4fr 0.2fr 0.1fr 0.3fr;
+    /* grid-auto-rows: minmax(50px, auto); */
+    grid-gap: 10px;
 }
-.four {
+
+.experience {
     grid-column: 2;
-    grid-row: 2/4;
-    background-color: grey;
+    grid-row: 2;
+    background-color: rgb(205, 188, 188);
     opacity: 0.2;
 }
-.five {
-    grid-column: 1;
+.education {
+    grid-column: 2;
     grid-row: 3;
-    background-color: blue;
-    opacity: 0.2;
-}
-.seven {
-    grid-column: 1;
-    grid-row: 4;
-    background-color: pink;
-    opacity: 0.2;
-}
-.height {
-    grid-column: 2;
-    grid-row: 4/6;
-    background-color: rgb(124, 84, 84);
+    background-color: rgb(181, 183, 250);
     opacity: 0.2;
 }
 
-.nine {
-    grid-column: 1;
-    grid-row: 5;
-    background-color: blueviolet;
-    opacity: 0.2;
+.identity,
+.hardskill,
+.language,
+.softskill {
+    /* grid-template-rows: 4; */
+    border: 2px solid red;
 }

@@ -1,5 +1,12 @@
 # Main goal : Create a resume wiht React and Css
 
+# To do list
+
+1 - Design model resume
+2 - Build main grid css according to model
+3 - Build grid components
+4 - Make grid components Css
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Languages React and Css
