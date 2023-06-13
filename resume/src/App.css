@@ -2,110 +2,58 @@
     height: 100%;
 }
 
-.container {
+.main {
     display: grid;
-    width: 100%;
-    border: solid 4px green;
-    background-color: antiquewhite;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-}
-
-.gridLeft {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 200px);
-    border: 2px solid red;
-
-    grid-column: 1/2;
-    grid-row: 1;
     grid-gap: 10px;
-    width: 50%;
+    grid-auto-rows: minmax(100px, auto);
 }
-
-.gridRight {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 200px);
-    border: 2px solid red;
-
+.one {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: green;
+    opacity: 0.4;
+}
+.two {
     grid-column: 2;
     grid-row: 1;
-    width: 70%;
+    background-color: red;
+    opacity: 0.4;
 }
-/* .avatar img {
-    width: 100px;
-    height: auto;
-} */
-
-.picture,
-.profile {
-    grid-row: 1;
-    /* min-height: 0px; */
+.three {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: yellowgreen;
+    opacity: 0.4;
 }
-
-.profile {
+.four {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2/4;
+    background-color: grey;
+    opacity: 0.4;
 }
-
-.identity {
-    grid-row: 2;
-    border: 1px solid blue;
-}
-
-.gridExperience {
-    grid-template-columns: 1;
-    grid-template-rows: repeat(3, 60px);
-    grid-gap: 10px;
-    grid-row: 2;
-}
-
-.childExperience1,
-.childExperience2,
-.childExperience3 {
-    border: 1px solid blue;
-    height: 60px;
-}
-
-.childExperience1 {
-    grid-row: 1;
-}
-.childExperience2 {
-    grid-row: 2;
-}
-.childExperience3 {
+.five {
+    grid-column: 1;
     grid-row: 3;
+    background-color: blue;
+    opacity: 0.4;
+}
+.seven {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: pink;
+    opacity: 0.4;
+}
+.height {
+    grid-column: 2;
+    grid-row: 4/6;
+    background-color: black;
+    opacity: 0.4;
 }
 
-.hardkill {
-    border: 1px solid blue;
-}
-
-.softskill {
-    border: 1px solid blue;
-}
-
-.gridTraining {
-    grid-template-columns: 1;
-    grid-template-rows: repeat(3, 60px);
-    grid-gap: 10px;
-    grid-row: 2;
-}
-
-.childTaining1,
-.childTaining2,
-.childTaining3 {
-    border: 1px solid green;
-    height: 60px;
-}
-
-.childTaining1 {
-    grid-row: 1;
-}
-.childTaining2 {
-    grid-row: 2;
-}
-.childTaining3 {
-    grid-row: 3;
+.nine {
+    grid-column: 1;
+    grid-row: 5;
+    background-color: blueviolet;
+    opacity: 0.4;
 }
