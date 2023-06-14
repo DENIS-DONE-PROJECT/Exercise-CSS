@@ -10,7 +10,7 @@ import Education from "./Components/Education";
 
 const Resume = () => {
     <div className="main">
-        <Picture />
+        {/*  <Picture />
         <Profile />
 
         <div className="Left">
@@ -20,7 +20,7 @@ const Resume = () => {
             <Softskill />
         </div>
         <Experience />
-        <Education />
+        <Education /> */}
     </div>;
 };
 
