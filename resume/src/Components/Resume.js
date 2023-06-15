@@ -9,19 +9,22 @@ import Experience from "../Components/Experience";
 import Education from "../Components/Education";
 
 const Resume = () => {
-    <div className="main">
-        <Picture />
-        <Profile />
-
-        <div className="left">
-            <Identity />
-            <Hardskill />
-            <Language />
-            <Softskill />
+    return (
+        <div>
+            <div className="main">
+                <Picture />
+                <Profile />
+                <div className="left">
+                    <Identity />
+                    <Hardskill />
+                    <Language />
+                    <Softskill />
+                </div>
+                <Experience />
+                <Education />
+            </div>
         </div>
-        <Experience />
-        <Education />
-    </div>;
+    );
 };
 
 export default Resume;
