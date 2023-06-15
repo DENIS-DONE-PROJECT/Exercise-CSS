@@ -1,24 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import api from "../api";
 
 const Profile = () => {
-    const [data, setData] = React.useState(null);
-    React.useEffect(() => {
-        fetch("/profile")
-            .then((res) => {
-                if (res.ok) {
-                    return res.json();
-                } else {
-                    throw new Error("Erreur de api backend");
-                }
-            })
-            .then((data) => setData(data))
-            .catch((error) =>
-                console.error(
-                    "Erreur lors de la reuperation des données",
-                    error
-                )
-            );
-    }, []);
+    const [data, setDatas] = useState([]);
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        !isMounted &&
+            api.getData().then((json) => {
+                setDatas(json);
+                setIsMounted(true);
+            });
+    }, [isMounted]);
 
     return (
         <div className="profile">
