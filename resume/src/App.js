@@ -11,17 +11,19 @@ import Education from "./Components/Education";
 
 function App() {
     return (
-        <div className="main">
-            <Picture />
-            <Profile />
-            <div className="Left">
-                <Identity />
-                <Hardskill />
-                <Language />
-                <Softskill />
+        <div>
+            <div className="main">
+                <Picture />
+                <Profile />
+                <div className="left">
+                    <Identity />
+                    <Hardskill />
+                    <Language />
+                    <Softskill />
+                </div>
+                <Experience />
+                <Education />
             </div>
-            <Experience />
-            <Education />
         </div>
     );
 }

@@ -4,7 +4,7 @@ const Language = () => {
     return (
         <div className="language">
             <h1>Langues</h1>
-            <p>Anglais - TOEIC : 865 / 900</p>
+            <p>Anglais - TOEIC</p>
         </div>
     );
 };
