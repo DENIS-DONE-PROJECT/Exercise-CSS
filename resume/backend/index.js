@@ -2,9 +2,10 @@ const express = require("express");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-app.get("/api", (req, res) => {
+app.get("/profile", (req, res) => {
     res.json({
-        message: " backend from resume",
+        fullname: "Denis Avocat",
+        title: " Développeur Web et Applications Mobile",
     });
 });
 
