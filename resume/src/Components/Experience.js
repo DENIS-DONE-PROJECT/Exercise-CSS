@@ -43,7 +43,7 @@ const Experience = () => {
                 <li>
                     <span className="date">1994 - 2004 </span>
                     <span className="company">SADTEM </span>
-                    Matériel électrique moyenne tension
+                    Matériel électrique
                     <span className="location">Douai</span>
                     <br></br>
                     <span className="job">Direction industrielle</span>
@@ -54,7 +54,7 @@ const Experience = () => {
                     Matériel électrique moyenne tension
                     <span className="location">Allemagne</span>
                     <br></br>
-                    <span className="job">Coordination inter usines</span>
+                    <span className="job">Coordination France - Allemagne</span>
                 </li>
                 <li>
                     <span className="date">1988 - 1991 </span>
@@ -64,18 +64,6 @@ const Experience = () => {
                     <br></br>
                     <span className="job">Ingénieur Bureau d'études</span>
                 </li>
-
-                {/*  <li>
-                    <span className="date">1988 - 1991 </span>
-                    Ingénieur Bureau d'études
-                    <span className="location">Bordeaux</span>
-                    <p>
-                        <span className="company">SATELEC </span>
-                        Matériel médical et chirurgical
-                        <span className="location">Bordeaux</span>
-                        <br></br>- Test de texte
-                    </p>
-                </li> */}
             </ul>
 
             {/*

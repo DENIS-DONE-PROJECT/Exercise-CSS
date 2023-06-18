@@ -20,6 +20,7 @@ const Resume = () => {
                     <Language />
                     <Softskill />
                 </div>
+
                 <Experience />
                 <Education />
             </div>

@@ -1,21 +1,25 @@
+:root {
+    --left-min-width: 300px;
+    --right-min-width: 750px;
+    --Left-right-text-padding: 3em;
+}
+
 .main {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
+
     grid-template-columns: 0.3fr 0.7fr;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
     /* grid-auto-rows: minmax(100px, auto); */
     grid-template-rows: 0.2fr 0.4fr 0.4fr;
-
-    margin: 1vw;
-    height: 100vh;
+    margin: 10px;
 }
 /* Picture */
 .picture {
     grid-column: 1;
     grid-row: 1;
-    background-color: green;
-    opacity: 0.4;
+
     text-align: center;
+    min-height: 150px;
 }
 
 img {
@@ -29,8 +33,7 @@ img {
 .profile {
     grid-column: 2;
     grid-row: 1;
-    background-color: red;
-    opacity: 0.4;
+    background-color: rgba(67, 100, 141, 0.204);
 }
 
 .left {
@@ -42,36 +45,39 @@ img {
     /* grid-template-rows: 0.4fr 0.2fr 0.1fr 0.3fr; */
     grid-template-rows: max-content;
     /* grid-auto-rows: minmax(50px, auto); */
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
 }
 
 .experience {
     grid-column: 2;
     grid-row: 2;
-    background-color: rgb(205, 188, 188);
-    opacity: 0.4;
+    background-color: rgba(192, 179, 246, 0.249);
+}
+
+.experience li {
+    /* margin-top: auto; */
+    /* line-break: auto; */
 }
 .education {
     grid-column: 2;
     grid-row: 3;
-    background-color: rgb(181, 183, 250);
-    opacity: 0.4;
+    background-color: rgba(192, 179, 246, 0.249);
 }
 
 span.date {
-    width: 10vw;
+    min-width: 8em;
     font-weight: bold;
     display: inline-block;
 }
 
 span.job {
-    padding-left: 10vw;
-    font-weight: bold;
+    padding-left: 8em;
+    /* font-weight: 500; */
     display: inline-block;
 }
 
 .location {
-    width: 150px;
+    width: 10em;
     font-weight: bold;
 
     float: right;
@@ -80,7 +86,7 @@ span.job {
 
 span.company {
     display: inline-block;
-    width: 150px;
+    width: 10em;
     font-weight: bold;
 }
 
@@ -91,18 +97,26 @@ li {
 ul {
     padding-left: 0px;
 }
-
+.picture,
 .identity,
 .hardskill,
 .language,
 .softskill {
-    /* grid-template-rows: 4; */
-    border: 2px solid red;
+    min-width: var(--left-min-width);
+    /* align-self: center; */
+    background-color: rgba(67, 100, 141, 0.204);
 }
 
-/* h1 {
-    font-weight: bold;
-} */
+.experience,
+.education {
+    /* align-self: center; */
+}
+
+.profile,
+.experience,
+.education {
+    min-width: var(--right-min-width);
+}
 
 .profile,
 .experience,
@@ -111,8 +125,24 @@ ul {
 .hardskill,
 .language,
 .softskill {
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
+    padding-left: var(--Left-right-text-padding);
+    padding-right: var(--Left-right-text-padding);
+}
+
+.experience li {
+    margin-bottom: 1em;
+}
+.education li {
+    margin-bottom: 1em;
+}
+
+.identityRow {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h1.inProgress {
+    margin-bottom: 0px;
 }
 
 .experience p,
@@ -120,45 +150,44 @@ ul {
     padding-left: 10vw;
 }
 
-.rightToLogo {
-    border-color: solid 4px red;
-    margin-left: 4vw;
+span.rightToLogo {
+    display: inline-block;
 }
 
-.rightToLogox {
-    /* margin-left: 4vw; */
-}
-
-.material-symbols-outlined {
+span.material-symbols-outlined {
     font-weight: bold;
-    width: 4vw;
+    width: 50px;
+    height: auto;
 }
 
-.pRightToLogo .rightToLogo {
-    margin-bottom: 0px;
+/* Hardskill */
+.logoLine,
+.logoText {
+    text-align: Left;
+    margin-top: 1vh;
+    margin-bottom: 5px;
+    min-width: 250px;
 }
 
-/* .picture,
-.left {
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-color: rgb(157, 255, 0);
-} */
-
-/* .logo {
+img.logoSkill {
     width: 40px;
     height: auto;
-    background-color: white;
-    margin-right: 10px;
-    margin: 0px;
-}
-span .logo {
-    width: 100px;
-} */
+    margin-top: 1vh;
+    margin-bottom: 5px;
 
-.logoSkill {
-    width: 40px;
-    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
     background-color: white;
-    margin-right: 10px;
 }
+
+span.logoSkill {
+    width: 40px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* End Hardskill */
