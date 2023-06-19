@@ -15,8 +15,8 @@ const Profile = () => {
 
     return (
         <div className="profile">
-            <h1>{!data ? "No exist" : data.fullname}</h1>
-            <h2>{!data ? "No exist" : data.title}</h2>
+            <h1>{!data ? "Nom Prénom à renseigner" : data.fullname}</h1>
+            <h2>{!data ? "Title à renseigner " : data.title}</h2>
         </div>
     );
 };
